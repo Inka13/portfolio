@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Template</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Trebuchet MS:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	</head>
+<body>
+<script>
+	
+	var theme = [['images/brown.png', '#000000', '#D65DA6']];
+	
+	
+    	var brojteme = 0;
+    
+    	var bg = theme[brojteme][0];
+    	var tex = theme[brojteme][1];
+    	var main = theme[brojteme][2];
+console.log(bg);
+    	document.body.style.setProperty('background-image', 'url(' + bg + ')');
+    	document.body.style.setProperty('--main-text-color', tex);
+    	document.body.style.setProperty('--main', main);
+    	
+    	
+</script>
+    	
+<link rel="stylesheet" href="style.css">
+
+      
+   <div id="container">
+    	<div class="logo logopic"><img src="images/logo.jpg"></div>
+    	<div class="logo"><p>DesignStudio</p><span class="name">Pink</span>Alien</div>
+    		
+
+    	<div class="nav">
+    		<div class="navsub"><a href="#about">About</a></div>
+    		<div class="navsub"><a href="#port">Portfolio</a></div>
+    		<div class="navsub"><a href="#conc">Contact</a></div>
+    		
+    	</div>
+    	<div class="bannerwrap">
+    		<div class="banner">
+    			<div class="word">Welcome to PinkAlienDesignStudio!</div>
+    			
+
+    		</div>
+    	</div>
+    	<div  id="about" class="content">
+    	<div><h2 class="sidekontakt">About me</h2></div>
+    		<img src="images/profile.jpg">
+    		<div class="textarea">
+    			<p>I'm a frontend web designer with tendencies to become a full-stack developer.</p><div class="highlighted">
+				I have a hunger for knowledge and I'm looking for new challenges every day!</div>
+				<p>Check out some of the things I've done so far.</p>
+				
+				
+				
+    		</div>
+				<div><h2 id ="port" class="sidekontakt">Portfolio</h2></div>
+
+    		<div class="portfolio">
+    			<div class="box"><img src="images/banner.jpg"></div>
+    			<div class="box"><img src="images/banner.jpg"></div>
+    			<div class="box"><img src="images/banner.jpg"></div>
+    			<div class="box"><img src="images/banner.jpg"></div>
+    			
+    		</div>
+				
+			<div><h2 id="conc" class="sidekontakt">Contact</h2></div>
+    		<div class="sideinfo">
+
+    			<div class="contact">
+    			
+    				<p>tel: +385 97 782 1645</p>
+    				<p>e-mail: inka.pelin13@gmail.com</p>
+    				<p>adresa: 31000 Osijek, Croatia </p>
+    				<p><a href="https://www.facebook.com/inka.pelin.3"><img src="images/face.png"></a><a href=""><img src="images/whatsup.png"></a><a href="https://www.linkedin.com/in/inka-pelin-65262b134/"><img src="images/linkedin.png"></a></p>
+    			</div>
+    			<div id="map"></div>
+    		</div>
+    	</div>
+    	<div class="footer">
+
+    		<div class="nav2">
+    			<div class="navsub"><a href="#about">About</a></div>
+    			<div class="navsub"><a href="#port">Portfolio</a></div>
+    			<div class="navsub"><a href="#conc">Contact</a></div>
+    		</div>
+    		<div class="logo logopic"><img src="images/logo.jpg"></div>
+    	<div class="logo"><p>DesignStudio</p><span class="name">Pink</span>Alien</div>
+            
+    		<div class="down"><span class="adress"> 31000 Osijek, Croatia</span>, tel: +385 97 782 1645</div>
+    		<div class="down">PinkAlien © Copyright 2017. All Rights Reserved.</div>
+                
+    	</div>
+   </div> 
+<script>
+	
+      
+      </script>
+<script>
+	const words = document.querySelectorAll('.word').forEach(function(word){
+			window.setTimeout(function(){
+			word.style.visibility = 'visible';
+			
+			}, 2000);
+		});
+			
+		
+		
+		
+	
+	const banner = document.querySelector('.banner');
+			
+		window.setTimeout(function zoom() {
+			banner.classList.add('animate');
+		}, 1);
+	window.setInterval(function unzoom() {
+		banner.classList.remove('animate');
+		window.setTimeout(function zoom() {
+			banner.classList.add('animate');
+		}, 7200);
+	}, 14400);
+
+	
+	function initMap() {
+          
+          var uluru = {lat: 45.76584, lng: 15.98729};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 16,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            animation: google.maps.Animation.DROP,
+            map: map
+          });
+	}
+
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJPEGL_qaEUYuoeTQzPPP6Q55WZAXkXaQ&callback=initMap">
+</script>
+
+</body>
+</html>	

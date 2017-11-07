@@ -1,0 +1,312 @@
+
+body {
+	 
+	background-image: url('images/pattern.svg');
+	background-size: cover;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+.forma {
+	position: fixed;
+}
+#container {
+	width:70%;
+	margin-left: 15%;
+	
+}
+
+.logo {
+	
+	
+	font-family: 'Trebuchet MS', sans-serif;
+	letter-spacing: -0.03em;
+	float: left;
+	font-weight: 700; 
+	margin-left: 5px;
+	font-size: 2rem; 
+	
+	
+}
+.highlighted {
+	background-color: var(--main);
+	padding: 10px;
+	font-size: 20px;
+}
+.logopic {
+	border: 3px solid var(--main-text-color);
+	border-radius: 50%;
+	margin: auto;
+	overflow: hidden;
+	background-color: white;
+}
+.poruka p {
+	font-size: 10px;
+}
+.logo p {
+	margin-bottom: -10px;
+	font-size: 1rem;
+}
+.name {
+	color: var(--main-text-color);
+}
+.adress {
+	color: var(--main-text-color);
+}
+.poruka{
+	width: 400px;
+	color: var(--main-text-color);
+	float: right;
+	text-align: right;
+}
+.tel {
+	font-size: 20px;
+	
+}
+.tel:hover {
+	background-color: var(--main-text-color);
+}
+.bannerwrap {
+	width: 100%;
+	height: 200px;
+	
+	margin-top: 50px;
+	
+	overflow: hidden;
+}
+.banner {
+	width: 100%;
+	height: 100%;
+	background-image: url('images/banner.jpg');
+	transition: all 12s;
+	padding-left:12%; 
+	
+
+}
+.word {
+	
+	color: white;
+	
+	background-color: rgba(0,0,0,0);
+	padding: 6% 0 0 2%;
+	text-align: left;
+	font-size: 40px;
+	transition: visibility 2s;
+    visibility: hidden;
+}
+.show {
+	color: white;
+}
+.animate {
+	transform: scale(1.3);
+}
+.nav {
+	top: 20px;
+	min-width: 70%; 
+	border: 1px solid var(--main-text-color);
+	border-left: 0;
+	border-right: 0;
+	display: flex;
+	justify-content: space-between;
+}
+.navsub {
+	font-size: 20px;
+	letter-spacing: 0.05em;
+	padding: 10px 0;
+}
+.navsub:hover {
+	background-color: var(--main-text-color);
+}
+.content {
+	width: 100%;
+	font-weight: 500;
+	background-color: white;
+	color: black;
+	padding-bottom: 30px;
+	margin-top: 10px;
+	
+	justify-content: space-around;
+}
+.textarea {
+	width: 45%;
+	padding: 20px 0 20px 40px;
+	
+}
+.content img{
+	float: right;
+	width:40%;
+	max-height: 250px;
+	margin-right: 5%;
+	
+}
+p {
+	padding: 3px 0;
+}
+.sideinfo {
+	font-size: 14px;
+	width:90%;
+	margin: auto;
+	display: flex;
+	flex-flow: space-around;
+}
+
+.sidekontakt {
+	background-color: var(--main-text-color);
+	width:90%;
+
+	margin-left: 5%;
+	color: white;
+	padding:3px 5px;
+	letter-spacing: 0.1em;
+	
+}
+#map {
+	width: 60%;
+	height: 270px;
+	margin-left: 5%;
+}
+.portfolio {
+	width: 100%;
+	margin: 30px 0;
+	display: flex;
+	flex-flow:row wrap;
+	 justify-content: space-around;
+}
+.box {
+	width: 30%;
+	
+
+	
+}
+.box img {
+	height: 180px;
+	width: 250px;
+	padding-bottom: 20px;
+}
+.contact img {
+	width: 15%;
+    float: left;
+    padding-bottom: 20px;
+}
+.footer {
+	width: 100%;
+	
+	margin-top: 20px;
+	clear: both;
+	font-size: 10px;
+}
+
+
+.nav2 {
+	width: 70%;
+	max-height: 260px;
+	border: 1px solid var(--main-text-color);
+	border-left: 0;
+	border-right: 0;
+	
+	padding: 10px 0;
+	display: flex;
+	
+	float: right;
+}
+.navsub {
+	flex: 1;
+	text-align: center;
+	flex-wrap: wrap;
+	letter-spacing: 0.05em;
+
+}
+.down {
+	width: 60%;
+	float: right;
+	margin-bottom: 30px;
+	text-align: right;
+	margin-top: 20px;
+}
+@media (max-width: 1080px) {
+	body {
+		
+	}
+	.nav {
+		flex-flow: column;
+		font-size: 3rem;
+	}
+	.navsub {
+		flex: 1;
+		
+	}
+	#container {
+		width: 100%;
+		margin: auto;
+	}
+	.content {
+		flex-flow: column;
+		margin: auto;
+		font-size: 3rem;
+	}
+	.content img {
+		margin-top: 30px;
+	}
+	.textarea {
+	width: 90%;
+
+	}
+	.sideinfo {
+		flex-flow: column;
+	margin: auto;
+	width:90%;
+	font-size: 3rem;
+    }
+    .sideinfo p {
+		width:90%;
+    }
+    .sidekontakt {
+
+    }
+    .bannerwrap {
+    	height: 360px;
+    }
+    .word {
+    font-size: 60px;
+	}
+	#map {
+		width: 90%;
+		height: 800px;
+	}
+	
+	.logo {
+		font-size: 4rem;
+	}
+	.logopic {
+		font-size: 7rem;
+	}
+	.logo p{
+		font-size: 2rem;
+		margin-bottom: -20px;
+	}
+	
+	
+	.nav2 {
+		width: 100%;
+		font-size: 2rem;
+	}
+	.down {
+		width: 100%;
+		font-size: 2.5rem;
+	}
+	.box {
+		width: 90%;
+	}
+	.box img {
+	height: 400px;
+	width: 90%;
+	padding-bottom: 20px;
+}
+.profile { padding-top: 30px; }
+.highlighted {
+	
+	font-size: 3rem;
+}
